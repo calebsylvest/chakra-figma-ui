@@ -49,7 +49,7 @@ export function Navbar() {
                 </Box>
               </Link>
 
-              <Link href="/theme-toggle-demo" style={{ textDecoration: "none" }}>
+              <Link href="/design-system" style={{ textDecoration: "none" }}>
                 <Box
                   px={3}
                   py={2}
@@ -57,31 +57,7 @@ export function Navbar() {
                   _hover={{ bg: { base: "gray.100", _dark: "gray.800" } }}
                   transition="background 0.2s"
                 >
-                  Theme
-                </Box>
-              </Link>
-
-              <Link href="/theme-explorer" style={{ textDecoration: "none" }}>
-                <Box
-                  px={3}
-                  py={2}
-                  borderRadius="md"
-                  _hover={{ bg: { base: "gray.100", _dark: "gray.800" } }}
-                  transition="background 0.2s"
-                >
-                  Explorer
-                </Box>
-              </Link>
-
-              <Link href="/semantic-tokens" style={{ textDecoration: "none" }}>
-                <Box
-                  px={3}
-                  py={2}
-                  borderRadius="md"
-                  _hover={{ bg: { base: "gray.100", _dark: "gray.800" } }}
-                  transition="background 0.2s"
-                >
-                  Semantic
+                  Design System
                 </Box>
               </Link>
             </HStack>
