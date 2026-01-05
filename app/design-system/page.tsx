@@ -8,6 +8,11 @@ const sections = [
     href: "/design-system/colors",
   },
   {
+    title: "Semantic Tokens",
+    description: "Theme-aware tokens that automatically adapt to light and dark modes",
+    href: "/design-system/semantic-tokens",
+  },
+  {
     title: "Typography",
     description: "Font families, sizes, weights, and text styles",
     href: "/design-system/typography",

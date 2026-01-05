@@ -9,6 +9,7 @@ const sections = [
     title: "Design Tokens",
     items: [
       { label: "Colors", href: "/design-system/colors" },
+      { label: "Semantic Tokens", href: "/design-system/semantic-tokens" },
       { label: "Typography", href: "/design-system/typography" },
       { label: "Spacing", href: "/design-system/spacing" },
       { label: "Radii", href: "/design-system/radii" },

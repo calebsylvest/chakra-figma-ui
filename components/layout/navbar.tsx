@@ -37,18 +37,6 @@ export function Navbar() {
                 </Box>
               </Link>
 
-              <Link href="/token-demo" style={{ textDecoration: "none" }}>
-                <Box
-                  px={3}
-                  py={2}
-                  borderRadius="md"
-                  _hover={{ bg: { base: "gray.100", _dark: "gray.800" } }}
-                  transition="background 0.2s"
-                >
-                  Tokens
-                </Box>
-              </Link>
-
               <Link href="/design-system" style={{ textDecoration: "none" }}>
                 <Box
                   px={3}

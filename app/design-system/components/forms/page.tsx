@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Heading, VStack, Text, SimpleGrid, HStack, Button, Input, Textarea } from "@chakra-ui/react";
+import { Box, Heading, VStack, Text, SimpleGrid, HStack, Button, Input, Textarea, Field } from "@chakra-ui/react";
 import { useState } from "react";
 
 export default function FormsPage() {
@@ -172,13 +172,13 @@ export default function FormsPage() {
               <VStack gap={4} align="start" w="full">
                 <Heading size="md">Input States</Heading>
                 <VStack gap={3} align="start" w="full">
-                  <VStack gap={1} align="start" w="full">
-                    <Text fontSize="xs" fontWeight="semibold">Invalid</Text>
-                    <Input invalid placeholder="Invalid input" />
-                    <Text fontSize="xs" color={{ base: "red.600", _dark: "red.400" }}>
+                  <Field.Root invalid>
+                    <Field.Label fontSize="xs" fontWeight="semibold">Invalid</Field.Label>
+                    <Input placeholder="Invalid input" />
+                    <Field.ErrorText fontSize="xs">
                       This field is required
-                    </Text>
-                  </VStack>
+                    </Field.ErrorText>
+                  </Field.Root>
                   <VStack gap={1} align="start" w="full">
                     <Text fontSize="xs" fontWeight="semibold">Disabled</Text>
                     <Input disabled placeholder="Disabled input" value="Cannot edit" />
@@ -198,7 +198,12 @@ export default function FormsPage() {
                   w="full"
                   fontSize="xs"
                 >
-{`<Input invalid />
+{`<Field.Root invalid>
+  <Field.Label>Email</Field.Label>
+  <Input placeholder="email@example.com" />
+  <Field.ErrorText>This field is required</Field.ErrorText>
+</Field.Root>
+
 <Input disabled />
 <Input readOnly />`}
                 </Box>
@@ -477,13 +482,13 @@ export default function FormsPage() {
                 </VStack>
 
                 {/* Error State */}
-                <VStack gap={2} align="start" w="full">
-                  <Text fontSize="sm" fontWeight="medium">Email *</Text>
-                  <Input invalid placeholder="email@example.com" />
-                  <Text fontSize="xs" color={{ base: "red.600", _dark: "red.400" }}>
+                <Field.Root invalid>
+                  <Field.Label fontSize="sm" fontWeight="medium">Email *</Field.Label>
+                  <Input placeholder="email@example.com" />
+                  <Field.ErrorText fontSize="xs">
                     Please enter a valid email address
-                  </Text>
-                </VStack>
+                  </Field.ErrorText>
+                </Field.Root>
 
                 {/* Warning State */}
                 <VStack gap={2} align="start" w="full">
