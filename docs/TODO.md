@@ -2,7 +2,7 @@
 
 Active tasks and checklist for building the Chakra UI design system with AI-powered design-to-code workflow.
 
-**Last Updated:** 2026-01-05
+**Last Updated:** 2026-01-05 (Evening - Token Sync Complete)
 
 ## How to Use This File
 
@@ -21,15 +21,16 @@ Tasks are organized by priority and category. Focus on **High Priority** items f
 - ✅ Install and configure Figma MCP server globally
 - ✅ Install and configure Chakra UI MCP server
 - ✅ Verify MCP connection and available tools
+- ✅ Test Figma design extraction workflow (validated with round-trip test)
 - ⬜ Document MCP setup process in README
-- ⬜ Test Figma design extraction workflow
 
 ### Design Token Extraction
-- ⬜ Extract complete color palette from Figma
-  - Primary/brand colors
-  - Semantic colors (bg, fg, border)
-  - Status colors (error, warning, success, info)
-  - Gray scale (50-950)
+- ✅ Extract complete color palette from Figma
+  - ✅ Primary/brand colors
+  - ✅ Semantic colors (bg, fg, border)
+  - ✅ Status colors (error, warning, success, info)
+  - ✅ Gray scale (50-950)
+  - ✅ All color palettes (red, orange, yellow, green, teal, blue, cyan, purple, pink)
 - ⬜ Extract typography tokens from Figma
   - Font families
   - Font sizes
@@ -51,12 +52,15 @@ Tasks are organized by priority and category. Focus on **High Priority** items f
   - Z-index layers
 
 ### Token Integration
-- ⬜ Update `theme/tokens.ts` with extracted tokens
-- ⬜ Create token validation script
-- ⬜ Test tokens in light mode
-- ⬜ Test tokens in dark mode
-- ⬜ Document token naming conventions
-- ⬜ Create token usage examples
+- ✅ Update `theme/tokens.ts` with extracted tokens
+- ✅ Update `theme/semantic-tokens.json` with Figma values
+- ✅ Fix critical mismatches (black color, warning colors)
+- ✅ Document token naming conventions (see FIGMA-TOKEN-MAPPING-RULES.md)
+- ✅ Create token transformation utilities (scripts/figma-token-utils.ts)
+- ✅ Test Figma-to-Code sync workflow (round-trip test successful)
+- ⬜ Test tokens visually in light mode
+- ⬜ Test tokens visually in dark mode
+- ⬜ Create token usage examples for developers
 
 ### Code Connect Setup
 - ⬜ Map Figma Button component to code
@@ -163,8 +167,10 @@ Tasks are organized by priority and category. Focus on **High Priority** items f
 - ⬜ Add playground/sandbox page
 
 ### MCP Workflow Documentation
-- ⬜ Document Figma extraction workflow
-- ⬜ Document token sync process
+- ✅ Document Figma extraction workflow (SYNCING-TOKENS-FROM-FIGMA.md)
+- ✅ Document token sync process (complete guide with examples)
+- ✅ Document token transformation rules (FIGMA-TOKEN-MAPPING-RULES.md)
+- ✅ Create token comparison documentation (FIGMA-COLOR-COMPARISON.md)
 - ⬜ Create video tutorial (optional)
 - ⬜ Document Code Connect setup
 
@@ -244,6 +250,16 @@ Tasks are organized by priority and category. Focus on **High Priority** items f
 - ✅ Improved form validation with Field.Root pattern
 - ✅ Removed standalone demo pages
 - ✅ Updated navigation structure
+
+**2026-01-05 (Evening):**
+- ✅ Extracted complete color token set from Figma (150+ tokens)
+- ✅ Created comprehensive comparison table (FIGMA-COLOR-COMPARISON.md)
+- ✅ Defined token naming transformation rules (FIGMA-TOKEN-MAPPING-RULES.md)
+- ✅ Synced color tokens to match Figma (black + warning colors)
+- ✅ Validated workflow with round-trip test (magenta test)
+- ✅ Created token transformation utilities (scripts/figma-token-utils.ts)
+- ✅ Documented complete sync workflow (SYNCING-TOKENS-FROM-FIGMA.md)
+- ✅ Added npm scripts for token operations
 
 **2026-01-04:**
 - ✅ Set up Figma MCP server globally

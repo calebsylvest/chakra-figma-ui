@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tokens:check": "echo '💡 To sync tokens from Figma, use Claude Code and follow docs/SYNCING-TOKENS-FROM-FIGMA.md'",
+    "tokens:docs": "cat docs/SYNCING-TOKENS-FROM-FIGMA.md"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.30.0",

@@ -95,8 +95,8 @@
       },
       "warning": {
         "value": {
-          "_light": "{colors.orange.600}",
-          "_dark": "{colors.orange.300}"
+          "_light": "{colors.yellow.600}",
+          "_dark": "{colors.yellow.300}"
         }
       },
       "success": {

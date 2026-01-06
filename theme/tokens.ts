@@ -13,7 +13,7 @@ export const tokens = {
     // Base colors
     transparent: { value: "transparent" },
     current: { value: "currentColor" },
-    black: { value: "#09090B" },
+    black: { value: "#000000" }, // Synced with Figma
     white: { value: "#FFFFFF" },
 
     // White alpha (for overlays)
